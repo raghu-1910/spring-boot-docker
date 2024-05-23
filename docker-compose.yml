@@ -1,0 +1,11 @@
+version: '2.3'
+services:
+  customer-service:
+    container_name: customer-service
+    ports:
+      - 19001:8081
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    image: account-loop:TAG_NAME
+   
